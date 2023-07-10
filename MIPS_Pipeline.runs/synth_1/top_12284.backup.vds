@@ -1,0 +1,506 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Apr  7 21:58:53 2023
+# Process ID: 12284
+# Current directory: D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.runs/synth_1/top.vds
+# Journal file: D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30708 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 786.715 ; gain = 235.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imem' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/imem.sv:23]
+INFO: [Synth 8-3876] $readmem data file 'memfileIO.dat' is read successfully [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/imem.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (1#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/imem.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mips' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mips.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/maindec.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (2#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/maindec.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/aludec.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (3#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/aludec.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'floprc' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:32]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc' (4#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (5#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (5#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (6#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/datapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/new/hazard.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (7#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/new/hazard.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/regfile.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (9#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/regfile.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:44]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (10#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:44]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (11#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/adder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:53]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (12#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'signext' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/signext.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (13#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/signext.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'zeroext' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/zeronext.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'zeroext' (14#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/zeronext.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/al2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (15#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/al2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/new/eqcmp.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp' (16#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/new/eqcmp.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'floprc__parameterized0' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:32]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc__parameterized0' (16#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'floprc__parameterized1' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:32]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc__parameterized1' (16#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/new/mux4.sv:23]
+	Parameter Width bound to: 32 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/new/mux4.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (17#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/new/mux4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/alu.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (18#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/alu.sv:23]
+WARNING: [Synth 8-7023] instance 'alu' of module 'alu' has 5 connections declared, but only 4 given [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/datapath.sv:116]
+WARNING: [Synth 8-689] width (5) of port connection 'y' does not match port width (32) of module 'mux2' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/datapath.sv:117]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (18#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (18#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/flopr.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'q' does not match port width (32) of module 'flopr__parameterized1' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/datapath.sv:127]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (19#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/datapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (20#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mips.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dMemoryDecoder' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/dMemoryDecoder.sv:64]
+INFO: [Synth 8-6157] synthesizing module 'IO' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/IO.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'IO' (21#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/IO.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/dmem.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (22#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/dmem.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux7Seg' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mux7Seg.sv:23]
+INFO: [Synth 8-226] default block is never used [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mux7Seg.sv:37]
+INFO: [Synth 8-226] default block is never used [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mux7Seg.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'Hex7Seg' [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/Hex7Seg.sv:23]
+INFO: [Synth 8-226] default block is never used [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/Hex7Seg.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'Hex7Seg' (23#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/Hex7Seg.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux7Seg' (24#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/mux7Seg.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dMemoryDecoder' (25#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/dMemoryDecoder.sv:64]
+INFO: [Synth 8-6155] done synthesizing module 'top' (26#1) [D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.srcs/sources_1/imports/new/top.sv:23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[31]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[30]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[29]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[28]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[27]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[26]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[25]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[24]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[23]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[22]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[21]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[20]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[19]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[18]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[17]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[16]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[15]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[14]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[13]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[12]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design hazard has unconnected port branchD[1]
+WARNING: [Synth 8-3331] design maindec has unconnected port funct[5]
+WARNING: [Synth 8-3331] design maindec has unconnected port funct[4]
+WARNING: [Synth 8-3331] design maindec has unconnected port funct[3]
+WARNING: [Synth 8-3331] design maindec has unconnected port funct[2]
+WARNING: [Synth 8-3331] design maindec has unconnected port funct[1]
+WARNING: [Synth 8-3331] design maindec has unconnected port funct[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 860.156 ; gain = 308.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 860.156 ; gain = 308.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 860.156 ; gain = 308.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 860.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/constrs_1/imports/01 XUP Nexys4 DDR Board/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/constrs_1/imports/01 XUP Nexys4 DDR Board/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/constrs_1/imports/01 XUP Nexys4 DDR Board/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/constrs_1/imports/01 XUP Nexys4 DDR Board/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.srcs/constrs_1/imports/01 XUP Nexys4 DDR Board/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 962.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 962.051 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 962.051 ; gain = 410.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 962.051 ; gain = 410.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 962.051 ; gain = 410.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "RAM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 962.051 ; gain = 410.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 16    
+	   4 Input     32 Bit        Muxes := 2     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     12 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      3 Bit        Muxes := 1     
+Module floprc 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module flopr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module hazard 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module flopenrc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module floprc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module floprc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flopr__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module flopr__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module IO 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module Hex7Seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+Module mux7Seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module dMemoryDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design hazard has unconnected port branchD[1]
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[8]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[9]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[10]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[14]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[15]' (FDCE) to 'mips/dp/r2D/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[11]' (FDCE) to 'mips/dp/r2D/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[12]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[13]' (FDCE) to 'mips/dp/r2D/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[4]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[6]' (FDCE) to 'mips/dp/r2D/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[15]' (FDC) to 'mips/dp/r3E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[31]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[30]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[29]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[28]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[27]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[26]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[25]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[24]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[23]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[22]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[21]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[20]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[19]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[18]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[17]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[16]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[15]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[14]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[13]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[12]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[11]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[10]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[9]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[8]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[7]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[6]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3W/q_reg[5]' (FDC) to 'mips/dp/r7E/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[16]' (FDC) to 'mips/dp/r7E/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[16]' (FDC) to 'mips/dp/r3E/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[17]' (FDC) to 'mips/dp/r7E/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[17]' (FDC) to 'mips/dp/r3E/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[18]' (FDC) to 'mips/dp/r7E/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[18]' (FDC) to 'mips/dp/r3E/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[19]' (FDC) to 'mips/dp/r7E/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[19]' (FDC) to 'mips/dp/r3E/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[20]' (FDC) to 'mips/dp/r7E/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[20]' (FDC) to 'mips/dp/r3E/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[21]' (FDC) to 'mips/dp/r7E/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[21]' (FDC) to 'mips/dp/r3E/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[22]' (FDC) to 'mips/dp/r7E/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[22]' (FDC) to 'mips/dp/r3E/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[23]' (FDC) to 'mips/dp/r7E/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[23]' (FDC) to 'mips/dp/r3E/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[24]' (FDC) to 'mips/dp/r7E/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[24]' (FDC) to 'mips/dp/r3E/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[25]' (FDC) to 'mips/dp/r7E/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[25]' (FDC) to 'mips/dp/r3E/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[26]' (FDC) to 'mips/dp/r7E/q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[26]' (FDC) to 'mips/dp/r3E/q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[27]' (FDC) to 'mips/dp/r7E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[27]' (FDC) to 'mips/dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[28]' (FDC) to 'mips/dp/r7E/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[28]' (FDC) to 'mips/dp/r3E/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[29]' (FDC) to 'mips/dp/r7E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[29]' (FDC) to 'mips/dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[30]' (FDC) to 'mips/dp/r7E/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[30]' (FDC) to 'mips/dp/r3E/q_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips/dp/r7E/q_reg[31] )
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[26]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[24]' (FDCE) to 'mips/dp/r2D/q_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips/dp/r2D/q_reg[19] )
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[8]' (FDC) to 'mips/dp/r7E/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[8]' (FDC) to 'mips/dp/r3E/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[9]' (FDC) to 'mips/dp/r7E/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[9]' (FDC) to 'mips/dp/r3E/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[10]' (FDC) to 'mips/dp/r7E/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[10]' (FDC) to 'mips/dp/r3E/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[11]' (FDC) to 'mips/dp/r7E/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[11]' (FDC) to 'mips/dp/r3E/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[12]' (FDC) to 'mips/dp/r7E/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[12]' (FDC) to 'mips/dp/r3E/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[13]' (FDC) to 'mips/dp/r7E/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[13]' (FDC) to 'mips/dp/r3E/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[14]' (FDC) to 'mips/dp/r7E/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[14]' (FDC) to 'mips/dp/r3E/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[15]' (FDC) to 'mips/dp/r7E/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[31]' (FDC) to 'mips/dp/r3E/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[3]' (FDC) to 'mips/dp/r6E/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[4]' (FDC) to 'mips/dp/r6E/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[0]' (FDC) to 'mips/dp/r6E/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[4]' (FDC) to 'mips/dp/r7E/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[4]' (FDC) to 'mips/dp/r3E/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[1]' (FDC) to 'mips/dp/r4E/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[5]' (FDC) to 'mips/dp/r3E/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[6]' (FDC) to 'mips/dp/r3E/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[7]' (FDC) to 'mips/dp/r3E/q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[0]' (FDC) to 'mips/dp/r3E/q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[1]' (FDC) to 'mips/dp/r3E/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[2]' (FDC) to 'mips/dp/r3E/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r7E/q_reg[3]' (FDC) to 'mips/dp/r3E/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r6E/q_reg[2]' (FDC) to 'mips/dp/r3E/q_reg[5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 962.051 ; gain = 410.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives      | 
++------------+-------------------+-----------+----------------------+-----------------+
+|top         | mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12	    | 
+|top         | dmd/dmem/RAM_reg  | Implied   | 256 x 32             | RAM256X1S x 32	 | 
++------------+-------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+

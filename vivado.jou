@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Apr  8 23:31:14 2023
+# Process ID: 25164
+# Current directory: D:/Program Files/Verilog project/MIPS_Pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15932 D:\Program Files\Verilog project\MIPS_Pipeline\MIPS_Pipeline.xpr
+# Log file: D:/Program Files/Verilog project/MIPS_Pipeline/vivado.log
+# Journal file: D:/Program Files/Verilog project/MIPS_Pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source test.tcl
+close_sim
+open_project {D:/Program Files/Verilog project/MIPS_MultiCycle/MIPS_MultiCycle.xpr}
+update_compile_order -fileset sources_1
+current_project MIPS_Pipeline
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+source test.tcl
+current_project MIPS_MultiCycle
+launch_simulation
+open_wave_config {D:/Program Files/Verilog project/MIPS_MultiCycle/testbench_behav.wcfg}
+source test.tcl
+current_project MIPS_Pipeline
+launch_simulation
+source test.tcl
+current_wave_config {Untitled 3}
+add_wave {{/test/dut/dmd/led1}} 
+restart
+run 10 us
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Program Files/Verilog project/MIPS_Pipeline/MIPS_Pipeline.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+close_project
+launch_simulation
+open_wave_config {D:/Program Files/Verilog project/MIPS_MultiCycle/testbench_behav.wcfg}
+source test.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/test/dut/dmd/sg/data}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/test/dut}} 
+restart
+run 10 us
+save_wave_config {D:/Program Files/Verilog project/MIPS_MultiCycle/testbench_behav.wcfg}
+close_sim

@@ -1,0 +1,26 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[22]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                    mips/dp/r2D/q_reg[0]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  mips/dp/pcreg/q_reg[2]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[21]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                    mips/dp/r2D/q_reg[1]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[17]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                    mips/dp/r2D/q_reg[7]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                    mips/dp/r2D/q_reg[5]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[16]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                    mips/dp/r2D/q_reg[2]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[31]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                    mips/dp/r2D/q_reg[3]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[20]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[28]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[23]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[18]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[29]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  mips/dp/pcreg/q_reg[3]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  mips/dp/pcreg/q_reg[4]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  mips/dp/pcreg/q_reg[5]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[27]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                   mips/dp/r2D/q_reg[25]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
